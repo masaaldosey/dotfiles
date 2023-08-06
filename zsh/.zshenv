@@ -61,3 +61,10 @@ cfg_git(){
   fi
 }
 
+# function to remove non-existent branches in remote from local git
+del_na(){
+	echo "Removing non-existent branches in remote from local git"
+	git checkout $1
+	git pull
+	git fetch -p && git branch -vv | awk '/: gone]/{print $1}' | xargs git branch -d
+}
