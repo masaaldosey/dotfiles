@@ -90,6 +90,12 @@ endfunction
 " Maximum text width
 set textwidth=78
 
+:" Map Ctrl-A -> Start of line, Ctrl-E -> End of line
+:noremap <C-a> <Home>
+:noremap <C-e> <End>
+:inoremap <C-a> <Home>
+:inoremap <C-e> <End>
+
 " Strip double spaces from eol in markdown
 function! <SID>StripTrailingWhitespaces()
 	let l = line(".")
