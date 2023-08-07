@@ -68,3 +68,7 @@ del_na(){
 	git pull
 	git fetch -p && git branch -vv | awk '/: gone]/{print $1}' | xargs git branch -d
 }
+
+# export ~/.local/bin
+export PATH="/home/prabhat.kondamadugula/.local/bin:$PATH"
+
