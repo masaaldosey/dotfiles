@@ -44,6 +44,12 @@ set laststatus=2
 set splitbelow
 set splitright
 
+" quicker window movement
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
+
 " use 4 spaces instead of tabs during formatting
 set expandtab
 set tabstop=4
