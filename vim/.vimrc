@@ -5,8 +5,8 @@ set showmatch
 " Disable the default Vim startup message.
 set shortmess+=I
 
-" Enable ruler
-set ruler
+" Show colored column at width 80
+set colorcolumn=80
 
 " Show line numbers.
 set number
@@ -37,7 +37,8 @@ set incsearch
 " Unbind some useless/annoying default key bindings.
 nmap Q <Nop> " 'Q' in normal mode enters Ex mode. You almost never want this.
 
-" Always show the status line at the bottom, even if you only have one window open.
+" Always show the status line at the bottom, even if you only have one window
+"open.
 set laststatus=2
 
 " open new split panes to right and bottom, which feels more natural
