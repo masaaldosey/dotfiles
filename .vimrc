@@ -135,7 +135,7 @@ nnoremap <C-f> :NERDTreeFind<CR>
 let NERDTreeIgnore=['\.pyc$', '\~$']
 
 " colorscheme
-colorscheme lucius
+colorscheme Monokai
 
 " NERDComment
 " Add spaces after comment delimiters by default
