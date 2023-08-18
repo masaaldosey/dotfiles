@@ -124,3 +124,14 @@ nnoremap <Up>    :echoe "Use k"<CR>
 nnoremap <Down>  :echoe "Use j"<CR>
 " ...and in insert mode
 inoremap <Left>  <ESC>:echoe "Use h"<CR>
+
+" ------------------------
+" Plugin Configurations
+" ------------------------
+
+" NERDTree
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
+
