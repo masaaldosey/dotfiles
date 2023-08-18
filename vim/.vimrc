@@ -134,3 +134,6 @@ nnoremap <C-n> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 let NERDTreeIgnore=['\.pyc$', '\~$']
 
+" colorscheme
+colorscheme lucius
+
