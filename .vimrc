@@ -8,6 +8,9 @@ set shortmess+=I
 " Show colored column at width 80
 set colorcolumn=80
 
+" Automatically wrap at width 80 for markdown files
+au BufRead,BufNewFile *.md setlocal textwidth=80
+
 " Show line numbers.
 set number
 
