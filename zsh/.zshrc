@@ -105,4 +105,5 @@ setopt no_auto_menu  # require an extra TAB press to open the completion menu
 
 # custom ls aliases
 alias notes='cd /home/prabhat.kondamadugula/Documents/notes;ls -al'
+alias rpyc="find . | grep -E '__pycache__$|\.pyc$|\.pyo$)' | xargs rm -rf"
 
