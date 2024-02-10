@@ -43,32 +43,3 @@ fi
 . "$Z4H"/z4h.zsh || return
 
 setopt rcs
-
-# function to configure git username and email
-cfg_git(){
-  echo "Configuring git username and email for $1"
-
-	if [ $1 = "gitlab" ]; then
-		~/sh.leela/gitlab-cfg.sh
-		echo "Local gitlab username set to $(git config user.name)"
-		echo "Local gitlab user email set to $(git config user.email)"
-	fi
-
-	if [ $1 = "github" ]; then
-    ~/sh.leela/github-cfg.sh
-		echo "Local gitlab username set to $(git config user.name)"
-	  echo "Local gitlab user email set to $(git config user.email)"
-  fi
-}
-
-# function to remove non-existent branches in remote from local git
-del_na(){
-	echo "Removing non-existent branches in remote from local git"
-	git checkout $1
-	git pull
-	git fetch -p && git branch -vv | awk '/: gone]/{print $1}' | xargs git branch -d
-}
-
-# export ~/.local/bin
-export PATH="/home/prabhat.kondamadugula/.local/bin:$PATH"
-
