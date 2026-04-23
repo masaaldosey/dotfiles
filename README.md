@@ -3,10 +3,6 @@ a collection of my dotfiles.
 
 i use `zsh` as my default shell and `oh-my-zsh` framework to manage my `zsh` configuration.
 
-```bash
-$  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-```
-
 ## `oh-my-zsh` plugins
 
 i use only the bare essentials.
