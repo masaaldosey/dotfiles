@@ -6,7 +6,7 @@
 # variables
 dir=$HOME/dotfiles			# dotfiles directory
 old_dir=$HOME/dotfiles_old		# old dotfiles backup directory
-files="zshrc"			# list of files/folders to symlink in home directory
+files="zshrc vimrc"			# list of files/folders to symlink in home directory
 
 
 # create ~/dotfiles_old in home directory
