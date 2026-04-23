@@ -34,7 +34,9 @@ done
 # currently works on macOS and Debian based systems. 
 install_zsh() {
 	if [ -f /bin/zsh -o -f /usr/bin/zsh ]; then
-        sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+        if [[ ! -d "$HOME/.oh-my-zsh" ]]; then
+            sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+        fi
 	else
 		platform="$(uname)"
 		
