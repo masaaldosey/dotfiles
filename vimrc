@@ -4,6 +4,7 @@ set t_Co=256              " enable 256-color mode.
 syntax enable             " enable syntax highlighting (previously syntax on).
 colorscheme koehler       " set colorscheme
 set number                " show line numbers
+set relativenumber        " show relative line numbers too
 set laststatus=2          " last window always has a statusline
 filetype indent on        " activates indenting for files
 set nohlsearch            " Don't continue to highlight searched phrases.
