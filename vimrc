@@ -18,6 +18,8 @@ set shiftwidth=4          " indent/outdent by 4 columns
 set shiftround            " always indent/outdent to the nearest tabstop
 set expandtab             " use spaces instead of tabs
 set smarttab              " use tabs at the start of a line, spaces elsewhere
+set showcmd               " show (partial) command status line
+set showmatch             " show matching brackets
 
 " remove newbie crutches in Insert mode
 inoremap <Down> <Nop>
