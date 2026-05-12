@@ -107,6 +107,7 @@ source $ZSH/oh-my-zsh.sh
 
 # custom stuff
 export VCPKG_ROOT="$HOME/vcpkg"
+export PATH=$HOME/.local/bin:$PATH
 
 # function checkout main/master branch and remove branches
 # which do not exist on the upstream remote anymore
