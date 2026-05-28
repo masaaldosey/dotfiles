@@ -65,14 +65,12 @@ ZSH_THEME="jispwoso"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
-PYTHON_AUTO_VRUN=true
-
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git fzf python)
+plugins=(git fzf)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -119,3 +117,13 @@ del_na(){
 	git fetch -p && git branch -vv | awk '/: gone]/{print $1}' | xargs git branch -d
 }
 
+# function for activating ros2 environment
+ros2env() {
+source /opt/ros/jazzy/setup.zsh
+export ROS_DOMAIN_ID=4
+export RCUTILS_COLORIZED_OUTPUT=1
+alias cb='reset && colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release'
+alias cbi='reset && colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release --packages-ignore'
+alias cclean='ls; rm -rf ./build ./install ./log; reset; ls'
+alias ssb='source ./install/setup.zsh'
+}
