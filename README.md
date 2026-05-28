@@ -19,5 +19,3 @@ i use only the bare essentials.
 
 - git ([wiki](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git))
 - fzf ([wiki](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/fzf))
-- python ([wiki](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/python))
-
