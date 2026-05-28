@@ -106,6 +106,7 @@ source $ZSH/oh-my-zsh.sh
 # custom stuff
 export VCPKG_ROOT="$HOME/vcpkg"
 export PATH=$HOME/.local/bin:$PATH
+export PATH="/home/prabhat.kondamadugula/.pixi/bin:$PATH"
 
 # function checkout main/master branch and remove branches
 # which do not exist on the upstream remote anymore
@@ -127,3 +128,7 @@ alias cbi='reset && colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TY
 alias cclean='ls; rm -rf ./build ./install ./log; reset; ls'
 alias ssb='source ./install/setup.zsh'
 }
+
+# to run GUIs from inside containers
+xhost +local:docker
+
