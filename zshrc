@@ -131,4 +131,3 @@ alias ssb='source ./install/setup.zsh'
 
 # to run GUIs from inside containers
 xhost +local:docker
-
