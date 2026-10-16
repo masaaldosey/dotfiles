@@ -1,7 +1,17 @@
 # dotfiles
 a collection of my dotfiles.
 
+## Ubuntu
+i use `bash` as my default shell.
+
+## macOS
 i use `zsh` as my default shell and `oh-my-zsh` framework to manage my `zsh` configuration.
+
+### `oh-my-zsh` plugins
+i use only the bare essentials.
+
+- git ([wiki](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git))
+- fzf ([wiki](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/fzf))
 
 ## installation
 entry point is the [`make_symlinks.sh`](/make_symlinks.sh) file. it installs `zsh` on your machine and installs `oh-my-zsh` using their official installer.
@@ -12,10 +22,3 @@ cd ~/dotfiles
 chmod +x make_symlinks.sh
 ./make_symlinks.sh
 ```
-
-## `oh-my-zsh` plugins
-
-i use only the bare essentials.
-
-- git ([wiki](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git))
-- fzf ([wiki](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/fzf))
