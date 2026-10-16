@@ -103,12 +103,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# custom stuff
-export VCPKG_ROOT="$HOME/vcpkg"
-export PATH=$HOME/.local/bin:$PATH
-export PATH=$HOME/.pixi/bin:$PATH
 
-# function checkout main/master branch and remove branches
 # which do not exist on the upstream remote anymore
 # function to remove non-existent branches in remote from local git
 del_na(){
@@ -116,16 +111,5 @@ del_na(){
 	git checkout $1
 	git pull
 	git fetch -p && git branch -vv | awk '/: gone]/{print $1}' | xargs git branch -d
-}
-
-# function for activating ros2 environment
-ros2env() {
-source /opt/ros/jazzy/setup.zsh
-export ROS_DOMAIN_ID=4
-export RCUTILS_COLORIZED_OUTPUT=1
-alias cb='reset && colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release'
-alias cbi='reset && colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release --packages-ignore'
-alias cclean='ls; rm -rf ./build ./install ./log; reset; ls'
-alias ssb='source ./install/setup.zsh'
 }
 
